@@ -1,0 +1,185 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: white;
+    display: flex;
+    padding-bottom: 5%;
+
+
+}
+
+.container {
+    margin-top: 2%;
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+
+}
+
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+input {
+    display: none;
+}
+
+.bar {
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    margin: 7px;
+    cursor: pointer;
+    transition: 0, 5s;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: ease-in-out all 1s;
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0%;
+
+
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -16.6666666667%;
+
+
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -33.333333333%;
+
+
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -50%;
+
+
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -66.6666666667%;
+
+
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -83.3333333333%;
+}
+
+
+#imagem7:checked~.img1 {
+    margin-left: -100%;
+
+
+}
+
+#imagem8:checked~.img1 {
+    margin-left: -116.666666667%;
+
+
+}
+
+footer {
+    color: aliceblue;
+    bottom: -1%;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+}
+
+.imagem:hover {
+    transition-duration: 1s;
+    transition: ease-in-out(30px);
+}
+
+
+@media (max-width:480px) {
+    h1 {
+        display: flex;
+        text-align: center;
+        padding: 2%;
+        font-size: 30px;
+        margin: 8px;
+    }
+
+    .container {
+        width: 80%;
+        height: 50%;
+    }
+
+    body {
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    .navegacao {
+        bottom: -2px;
+        display: flex;
+        size: -30px;
+        margin-left: 4px;
+        margin-right: 3px;
+    }
+
+    .bar {
+        background-color: white;
+        width: 30px;
+        height: 5px;
+        margin: 3px;
+        margin-bottom: 5%;
+        cursor: pointer;
+    }
+
+    .footer{
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+    }
+
+
+}
